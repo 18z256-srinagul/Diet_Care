@@ -1,0 +1,55 @@
+{% extends "base_nav.html" %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% block content %}
+        <div class="display-1 text-center mx-auto">Home</div>
+
+    <div class=" container text-center mx-auto m-5">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col">
+                    <a href="fooddetails">
+                        <div class="card p-2 m-5" style="width: 28rem;">
+                            <img class="card-img-top" src="/static/home1.jpeg" alt="Card image cap">
+                    </a>
+                            <div class="card-body">
+                            <h5 class="card-title">Diet Analysis</h5>
+                            <p class="card-text">Enter your daily diet of the day and analyse the nutrients present in that diet</p>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="col">
+                    <div class="card p-2 m-5" style="width: 28rem;">
+                        <a href="Deficiency">
+                            <img class="card-img-top" src="/static/home2.jpeg" alt="Card image cap">
+                        </a>
+                            <div class="card-body">
+                            <h5 class="card-title">Disease & Deficiency</h5>
+                            <p class="card-text">Enter your deficiency and get details about nutrients to fight that deficiency </p>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card p-2 m-5" style="width: 28rem;">
+                        <a href="statistics">
+                            <img class="card-img-top" src="/static/Statistics.jpg" alt="Card image cap">
+                        </a>
+                            <div class="card-body">
+                            <h5 class="card-title">Statistics</h5>
+                            <p class="card-text"> Choose your diet first and get to know about statistics of your diet. </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+</body>
+</html>

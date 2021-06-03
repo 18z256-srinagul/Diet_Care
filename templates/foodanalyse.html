@@ -1,0 +1,341 @@
+{% extends "base_nav.html" %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% block content %}
+        <div  class="card  text-dark mx-auto" style="background:#f2caa7;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Cereals</div>
+            <div class = "card-body">
+                {% for items in cereals %}
+                    <div class="form-check p-5" style="float:left;" >
+                        <form method="POST">
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+
+        <div  class="card text-primary mx-auto" style="background:#abf26d;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Legumes</div>
+            <div class = "card-body">
+            {% for items in legumes %}
+                <div class="form-check p-5" style="float:left;" >
+                        <label class="form-check-label" >{{ items }}</label>
+                        <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                </div>
+            {% endfor %}
+            </div>
+
+        </div>
+
+        <div  class="card text-hint mx-auto" style="background:#edbbc7;width:80em; margin:25px;">
+
+            <div class="card-title text-center display-3">Vegetables</div>
+            <div class = "card-body">
+                {% for items in vegetables %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+
+        <div  class="card text-secondary mx-auto" style="width:80em; margin:25px; ">
+            <div class="card-title text-center display-3 ">Other Vegetables</div>
+            <div class = "card-body">
+                {% for items in other_vegetables %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-info mx-auto" style="background:#4f6363;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Fruits</div>
+            <div class = "card-body">
+                {% for items in fruits %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-danger mx-auto" style="background:#dde384;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Tubers</div>
+            <div class = "card-body">
+                {% for items in tubers %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-warning mx-auto" style="background:#f03245;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Spices</div>
+            <div class = "card-body">
+                {% for items in spices %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-warning mx-auto" style="background:#ab4302;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Nuts</div>
+            <div class = "card-body">
+                {% for items in nuts %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-secondary mx-auto" style="width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Sugars</div>
+            <div class = "card-body">
+                {% for items in sugars %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-info mx-auto" style="background:#42200b;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Mushrooms</div>
+            <div class = "card-body">
+                {% for items in mushrooms %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-danger mx-auto" style="background:#dae32b;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Miscellaneous</div>
+            <div class = "card-body">
+                {% for items in misc %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-hint mx-auto" style="background:#d1ebe3;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Milk</div>
+            <div class = "card-body">
+                {% for items in milk %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-primary mx-auto" style="width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Egg</div>
+            <div class = "card-body">
+                {% for items in egg %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-light mx-auto" style="background:#ed5565;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Chicken</div>
+            <div class = "card-body">
+                {% for items in chicken %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card  mx-auto" style="background:#52e352;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Meat</div>
+            <div class = "card-body">
+                {% for items in meat %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-secondary mx-auto" style="background:#6bede0;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Fishes</div>
+            <div class = "card-body">
+                {% for items in fishes %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-warning mx-auto" style="background:#7a6bed;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Shell Fishes</div>
+            <div class = "card-body">
+                {% for items in shell_fishes %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div  class="card text-primary mx-auto" style="background:#b5eaf5;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Marine Molluscs</div>
+            <div class = "card-body">
+                {% for items in marine_molluscs %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-secondary mx-auto" style="background:#b5f5c8;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Freshwater Fishes</div>
+            <div class = "card-body">
+                {% for items in freshwater_fishes %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-dark mx-auto" style="background:#f7999e;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Soups</div>
+            <div class = "card-body">
+                {% for items in soups %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-light mx-auto" style="background:#8f727a;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Baked</div>
+            <div class = "card-body">
+                {% for items in baked %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-secondary mx-auto" style="background:#d3f2ac;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Snacks</div>
+            <div class = "card-body">
+                {% for items in snacks %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-light mx-auto" style="background:#964b4b;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Chocolates</div>
+            <div class = "card-body">
+                {% for items in chocolates %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-light mx-auto" style="background:#000000;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Fast Food</div>
+            <div class = "card-body">
+                {% for items in fast_food %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="card text-success mx-auto " style="background:#ebdddd;width:80em; margin:25px;">
+            <div class="card-title text-center display-3">Beverages</div>
+            <div class = "card-body">
+                {% for items in beverages %}
+                    <div class="form-check p-5" style="float:left;" >
+                            <label class="form-check-label" >{{ items }}</label>
+                            <input type="checkbox" name="legumes" value="{{items}}" class="form-check-input" >
+                    </div>
+                {% endfor %}
+            </div>
+
+             <button type="submit" class="btn btn-lg btn-outline-success">Submit</button>
+                </form>
+        </div>
+
+    {% endblock %}
+</body>
+</html>
