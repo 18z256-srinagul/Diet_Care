@@ -1,0 +1,176 @@
+{% extends "base_nav.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% block content %}
+            <div class=" text-center m-5 p-5 display-1 ">
+                Results
+            </div>
+            {% for foods in food %}
+                <div class="card mx-auto mb-3 mt-4 p-4 border border-secondary" style="width:38em">
+                    <div>
+                        {% for j,k in foods.items() %}
+                            <div class="alert alert-warning display-6">{{j}}</div>
+                                {% for nut,val in k.items() %}
+                                        <ol class="list-group list-group-flush" >
+                                            <li class="list-group-item">{{nut}} : {{val}}
+                                                <div class="progress">
+                                                    {% if nut.startswith("Water") %}
+                                                        <div class="progress-bar bg-primary" role="progressbar" style="width: {{(val/95.77)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Protein") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/58.14)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("TotalFat") %}
+                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: {{(val/64.27)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("TotalFibre") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/47.55)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Carbohydrates") %}
+                                                        <div class="progress-bar bg-info" role="progressbar" style="width: {{(val/84.87)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Energy") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/2809)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("VitB1") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/2.143)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("VitB2") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/2.125)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("VitB3") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/38.442)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("VitB5") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/9.32)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("VitB6") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/316)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("VitB7") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/2875)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("VitB9") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/1032)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Arsenic") %}
+                                                        <div class="progress-bar bg-danger" role="progressbar" style="width: {{(val/11.01)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Calcium") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/1664)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Cobalt") %}
+                                                        <div class="progress-bar bg-danger" role="progressbar" style="width: {{(val/1.501)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Copper") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/6.72)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Iron") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/53.11)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Leadd") %}
+                                                        <div class="progress-bar bg-danger" role="progressbar" style="width: {{(val/9.301)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Magnesium") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/500)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Mercury") %}
+                                                        <div class="progress-bar bg-danger" role="progressbar" style="width: {{(val/14.58)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Phosphorous") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/1429)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Potassium") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/2374)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Sodium") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/849)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Zinc") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/18.75)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("TotalStarch") %}
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(val/76.14)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Fructose") %}
+                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: {{(val/26.54)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("Glucose") %}
+                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: {{(val/16.22)*100}}%" ></div>
+                                                    {% endif %}
+                                                    {% if nut.startswith("Sucrose") %}
+                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: {{(val/58.23)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                    {% if nut.startswith("TotalFreeSugars") %}
+                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: {{(val/84.32)*100}}%" ></div>
+                                                    {% endif %}
+
+                                                </div>
+                                            </li>
+                                        </ol>
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
+                </div>
+    {% endfor %}
+
+    <div class="container m-5 text-center">
+        <div class="jumbotron-fluid display-6 p-5 bg-dark text-light m-4">
+            Total Nutrients
+        </div>
+            {% for i,j in totalFood.items() %}
+                <div class="row p-1">
+                    <div class="col p-2" style="font-size:23px;">
+                        {{i}}
+                    </div>
+                    <div class="col p-2" style="font-size:20px;">
+                        {{j}}
+                    </div>
+                    <hr>
+
+                </div>
+            {% endfor %}
+
+        </div>
+
+    <form method="POST">
+        <div class="container text-center mb-5">
+            <button type="submit" class="btn btn-success btn-lg">Home</button>
+        </div>
+    </form>
+
+    {% endblock %}
+</body>
+</html>

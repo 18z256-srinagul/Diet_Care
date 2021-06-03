@@ -1,0 +1,64 @@
+{% extends "base_nav.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  {% block content %}
+
+    <div class="display-1 m-5 text-center">
+        Statistics
+    </div>
+
+    <div class="jumbotron-fluid border border-primary m-5">
+        <div class="text-center display-6 p-5 m-4 bg-primary text-light">
+            Your Best Food Stats
+        </div>
+        {% for nutr,food in foodstat.items() %}
+            <div class="m-5">
+                <div class="row" style="font-size:18px;">
+                    <div class="col" style="font-size:22px;">
+                       <i> Food with maximum {{nutr}} :</i>
+                    </div>
+                    <div class="col">
+                        {{food}}
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+        {% endfor %}
+    </div>
+
+    <div class="jumbotron-fluid border border-dark m-5">
+        <div class="text-center display-6 p-5 m-4 bg-secondary text-light">
+            Your Activity
+        </div>
+        {% for data in table %}
+            {% for time,food in data.items() %}
+                <div class="m-5" style="font-size:19px;">
+                    <div class="row">
+                        <div class="col">
+                            {{time}}
+                        </div>
+                        <div class="col">
+                            {{food}}
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            {% endfor %}
+
+        {% endfor %}
+    </div>
+
+  <div class="m-5 p-2 text-center">
+        <a href="/home"><button class="btn btn-outline-dark btn-lg btn-block">Back to home</button></a>
+  </div>
+
+  {% endblock %}
+
+</body>
+</html>

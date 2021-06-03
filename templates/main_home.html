@@ -1,0 +1,75 @@
+{% extends "base_nav.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+    {% block content %}
+
+    <div class="display-1 text-center p-5 text-light m-5" style="background-color:#198754; border-radius:10em;">
+        DIET CARE
+    </div>
+
+    <div class="container border rounded border-success p-4" style="width:80em; margin-top:5em; ">
+        <div class="row">
+            <div class="col float-left">
+                <img src="/static/HealthyFront.svg" width="500px" height="500px">
+            </div>
+            <div class="col float-right">
+                <div class="display-3 text-success">
+                    Are you eating healthy?
+                </div>
+                <div class="display-6 pt-5">
+                    Is your daily diet good for your health. Get to know about the calories present in the diet and analyse it!
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container border rounded border-success p-4" style="width:80em; margin-top:5em;">
+        <div class="row">
+            <div class="col float-left">
+                <div class="display-3 text-success">
+                    Want to find cure for health problems?
+                </div>
+                <div class="display-6 pt-5">
+                    Are you a person who visit doctors often and swallow pills? Get to know about the food to fight problems
+                </div>
+            </div>
+            <div class="col float-right">
+                <img src="/static/DiseaseFront1.svg" width="500px" height="500px">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container border rounded bg-success text-light border-success p-4" style="width:80em; margin-top:5em; margin-bottom:5em;">
+        <div class="display-3 mx-auto text-center">
+            Enter Diet Care
+        </div>
+        <div class="row">
+            <div class="col float-left">
+                <img src="/static/HappyFront1.svg" width="500px" height="500px">
+            </div>
+            <div class="col float-right">
+                <div class="display-6 pt-5">
+                    Give us your daily diet and get instant evalution about your diet. <br>
+                    If any health issues, treat it with good food!
+                </div>
+                <div class="mx-auto p-5">
+                    <a href="login">
+                        <button class="btn btn-outline-light p-4 mx-auto" style="width:28em;" > Get Started </button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    {% endblock %}
+
+</body>
+</html>
