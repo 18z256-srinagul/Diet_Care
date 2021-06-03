@@ -1,0 +1,20 @@
+def Dataset1():
+    df = pd.read_csv('NutritionalFacts_Fruit_Vegetables_Seafood.csv',na_values=[""])
+    df.dropna(axis=0)
+
+    columns=['Food and Serving', 'Calories', 'Caloriesfrom Fat', 'Total Fat(g)','Sodium(g)',
+             'Potassium(g)','Total Carbo-hydrate(g)', 'Dietary Fiber(g)','Sugars(g)', 'Protein(g)',
+             'Vitamin A', 'Vitamin C','Calcium', 'Iron', 'Saturated Fat',
+             'Saturated Fat.1','Chole-sterol.1', 'Food Type']
+
+    for cols in columns:
+        Healthy_Food[cols] = []
+
+    for cols in columns:
+        for food in df[cols][1:]:
+            if cols == 'Food and Serving' and type(food) == str:
+                Healthy_Food[cols].append(food.split(',')[0])
+            else:
+                Healthy_Food[cols].append(food)
+
+    print(Healthy_Food)

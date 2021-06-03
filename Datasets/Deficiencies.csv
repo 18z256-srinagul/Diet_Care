@@ -1,0 +1,193 @@
+Disease,Organ affected,Deficiency
+Dry mouth,Mouth,Water
+Dry tongue,Mouth,Water
+Fever,Body,Water
+Lack of sweating,Skin,Water
+Increased heart rate,Heart,Water
+Low blood pressure,Body,Water
+Sunken eyes,Eyes,Water
+unconsciousness,Body,Water
+Dry skin,Skin,Water
+Muscle weakness,Muscle,Water
+dizziness,Body,Water
+Headache,Head,Water
+reduced urination,Genital,Water
+tiredness,Body,Water
+swollen skin,Skin,Protein
+fatty liver,Liver,Protein
+kwashiorkor,Body,Protein
+hair loss,Head,Protein
+hair thinning,Head,Protein
+faded hair color,Head,Protein
+fractures,Bone,Protein
+stunned growth,Body,Protein
+poor apetite,Stomach,Protein
+mood changing,Head,Protein
+fatigue,Body,Protein
+hunger,Stomach,Protein
+slow healing,Body,Protein
+skin leasions,Skin,Protein
+imbalence diet,Stomach,Fat
+large bowel resection,Stomach,Fat
+inflammotory bowel,Stomach,Fat
+hair loss,Head,Fat
+frequent sick,Body,Fat
+rashes,Skin,Fat
+dry skin,Skin,Fat
+dry eyes,Eyes,Fat
+chillness,Body,Fat
+loss of menstrual cycle,Genital,Fat
+mental fatigue,Head,Fat
+growth delay,Body,Fat
+Constipation,Genital,Fibre
+weight gain,Body,Fibre
+blood sugar fluctuations,Body,Fibre
+fatigue,Body,Fibre
+diarrhea,Genital,Fibre
+over weight,Body,Fibre
+obesity,Body,Fibre
+digestive problems,Stomach,Fibre
+diabetes,Body,Fibre
+heart diseases,Heart,Fibre
+inflammation,Body,Fibre
+cholesterol,Body,Fibre
+skin problems,Skin,Fibre
+increased blood pressure,Body,Fibre
+weight loss,Body,Carbohydrates
+dehydration,Body,Carbohydrates
+Hunger,Stomach,Carbohydrates
+dizziness,Body,Carbohydrates
+confusion,Head,Carbohydrates
+anxious,Body,Carbohydrates
+difficulty in speaking,Mouth,Carbohydrates
+bad breath,Mouth,Carbohydrates
+headache,Head,Carbohydrates
+nausea,Mouth,Carbohydrates
+joint swelling,Body,Carbohydrates
+HIV/AIDS,Body,vitamin-b1
+diabetes,Body,vitamin-b1
+dialysis,Genital,vitamin-b1
+loss of appetite,Stomach,vitamin-b1
+fatigue,Body,vitamin-b1
+agitation,Stomach,vitamin-b1
+reduced reflexion,Body,vitamin-b1
+tinglings,Body,vitamin-b1
+weak muscle,Muscle,vitamin-b1
+blurry vision,Eyes,vitamin-b1
+nausea,Stomach,vitamin-b1
+vomitting,Stomach,vitamin-b1
+heart rate change,Heart,vitamin-b1
+shortness of breath,Nose,vitamin-b1
+cataract,Eyes,vitamin-b1
+motion sickness,Body,vitamin-b1
+weakened immune system,Body,vitamin-b1
+skin disorder,Skin,vitamin-b2
+hyperemia (excess blood),Body,vitamin-b2
+leasions in mouth,Mouth,vitamin-b2
+cracked/swollen lips,Mouth,vitamin-b2
+hair loss,Head,vitamin-b2
+reproductive peoblems,Genital,vitamin-b2
+sore throat,Throat,vitamin-b2
+itchy red eyes,Eyes,vitamin-b2
+dry skin,Skin,vitamin-b2
+red lips,Mouth,vitamin-b2
+anemia,Body,vitamin-b2
+watery eyes,Eyes,vitamin-b2
+diarrhea,Genital,vitamin-b2
+mood changing,Head,vitamin-b2
+vomitting,Stomach,vitamin-b3
+diarrhea,Genital,vitamin-b3
+headache,Head,vitamin-b3
+fatigue,Body,vitamin-b3
+memory loss,Head,vitamin-b3
+abdominal pain,Stomach,vitamin-b3
+decreased appetite,Stomach,vitamin-b3
+tongue swelling,Mouth,vitamin-b3
+blood circulation problems,Body,vitamin-b3
+Headache,Head,vitamin-b5
+fatigue,Body,vitamin-b5
+insomia,Body,vitamin-b5
+tinglings,Body,vitamin-b5
+intestinal disturbances,Stomach,vitamin-b5
+Rashes,Skin,vitamin-b6
+cracked lips,Mouth,vitamin-b6
+mood changing,Head,vitamin-b6
+improper immune system,Body,vitamin-b6
+nerve pain,Muscle,vitamin-b6
+anemia,Body,vitamin-b6
+cancers,Body,vitamin-b6
+hair loss,Head,vitamin-b7
+depression,Head,vitamin-b7
+hallucination,Head,vitamin-b7
+numbness,Bone,vitamin-b7
+tinglings,Skin,vitamin-b7
+seizures,Body,vitamin-b7
+improper immune system,Body,vitamin-b7
+Anemia,Body,vitamin-b9
+weakness,Body,vitamin-b9
+fatigue,Body,vitamin-b9
+irregular heart beat,Heart,vitamin-b9
+shortness of breath,Nose,vitamin-b9
+hair loss,Head,vitamin-b9
+mouth sores,Mouth,vitamin-b9
+pale skin,Skin,vitamin-b9
+grey hair,Head,vitamin-b9
+muscle cramps,Muscle,calcium
+tooth ache,Mouth,calcium
+cataract,Eyes,calcium
+brain alterations,Head,calcium
+weak bones,Bone,calcium
+hallucination,Head,calcium
+depression,Head,calcium
+confusion,Head,calcium
+weak nail,Nail,calcium
+fractures,Bone,calcium
+Fatigue,Body,copper
+frequent sick,Body,copper
+weak bones,Bone,copper
+walking difficulties,Body,copper
+common cold,Body,copper
+pale skin,Skin,copper
+grey hair,Head,copper
+vision problems,Eyes,copper
+shortness of breath,Nose,iron
+tinglings,Body,iron
+irregular heart beat,Heart,iron
+headache,Head,iron
+chest pain,Heart,iron
+inflammation of tongue,Mouth,iron
+muscle cramps,Muscle,magnesium
+mental disorder,Head,magnesium
+high blood pressure,Body,magnesium
+asthma,Nose,magnesium
+irregular heart beat,Heart,magnesium
+anxious,Body,phosphorous
+fatigue,Body,phosphorous
+irregular breathing,Nose,phosphorous
+joint stiffness,Body,phosphorous
+change in weight,Body,phosphorous
+fatigue,Body,potassium
+digestive problems,Stomach,potassium
+muscle stiffness,Muscle,potassium
+breathing difficulties,Nose,potassium
+mood changing,Head,potassium
+headache,Head,sodium
+vomitting,Stomach,sodium
+muscle spams,Muscle,sodium
+confusion,Head,sodium
+coma,Head,sodium
+body ache,Body,sodium
+no healing,Skin,zinc
+weight loss,Body,zinc
+decreased sence of tase,Mouth,zinc
+decreased sence of smell ,Nose,zinc
+diarrhea,Genital,zinc
+appetite loss,Stomach,zinc
+hair loss,Head,zinc
+skin leasions,Skin,zinc
+eye lesions,Eyes,zinc
+illness,Body,sugar
+weak,Body,sugar
+mental weakness,Head,sugar
+mental fatigue,Head,sugar
+skin wrinkles,Skin,sugar
